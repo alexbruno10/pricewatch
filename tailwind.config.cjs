@@ -28,6 +28,9 @@ module.exports = {
       },
       borderRadius: {
         '4xl': '2rem',
+      },
+      backgroundImage: {
+        'header': "url('../src/assets/Header-card.svg')"
       }
     }
   },

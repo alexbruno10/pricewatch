@@ -1,7 +1,9 @@
+import Home from "./pages/Home"
+
 function App() {
   return (
       <>
-        <h2 className="text-lg">Ola</h2>
+        <Home />
       </>
   )
 }
