@@ -6,3 +6,11 @@ body {
     @apply bg-background;
     @apply font-sans text-gray-light;
 }
+
+.atualization {
+    @apply animate-pulse bg-green w-5 h-5 rounded-full;
+}
+
+hr {
+    @apply w-full
+}
