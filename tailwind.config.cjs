@@ -17,6 +17,9 @@ module.exports = {
       'gray-dark': '#7c7c7c',
       'gray': '#0A0A14',
       'gray-light': '#d3dce6',
+      'linkedin': '#0e76a8',
+      'mail': '#833AB4',
+      'github': '#171515'
     },
     fontFamily: {
       sans: ['Poppins', 'sans-serif'],
