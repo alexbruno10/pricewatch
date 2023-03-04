@@ -66,7 +66,7 @@ export default function CoinList() {
           {coin.map((item) => (
             <div key={item.code} className="bg-gray flex items-center pl-8 w-full sm:h-28 md:h-32 border-none rounded-lg">
               <div className="flex items-center gap-4">
-                <img src={`src/assets/${item.code}.svg`} className="sm:w-16 sm:h-16 md:w-20 md:h-20" />
+                <img src={`/${item.code}.svg`} className="sm:w-16 sm:h-16 md:w-20 md:h-20" />
                 <div className="grid">
                   <strong className="md:text-base sm:text-sm lg:text-lg xl:text-xl">
                     {item.name}

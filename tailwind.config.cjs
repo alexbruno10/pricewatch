@@ -33,7 +33,7 @@ module.exports = {
         '4xl': '2rem',
       },
       backgroundImage: {
-        'header': "url('../src/assets/Header-card.svg')"
+        'header': "url('/Header-card.svg')"
       }
     }
   },
