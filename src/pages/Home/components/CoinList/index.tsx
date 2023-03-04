@@ -15,7 +15,11 @@ export default function CoinList() {
   const [coin, setCoin] = useState<ICoin[]>([]);
   const [loading, setLoading] = useState(true);
 
-  const date = new Date().toLocaleTimeString('pt-BR');
+  const date = new Date().toLocaleTimeString("pt-BR", {
+    timeStyle: "short",       //Serão retornado apenas horas e minutos.  
+    hour12: false,            //Formato de 24h, suprimindo sufixos AM e PM.
+    numberingSystem: "latn"   //Resulado em algarismos indo-arábicos.
+  });
 
   async function getPosts() {
     try {
@@ -54,7 +58,7 @@ export default function CoinList() {
         <div className="flex sm:justify-center md:justify-center lg:justify-end xl:justify-end mt-5 gap-4 text-center items-center">
           <span className="atualization" />
           <span className="sm:text-xs md:text-base">
-            Última atualização às {date}
+            Última atualização às {date}h
           </span>
         </div>
         <div className="flex pt-10 gap-2 items-center text-gray-dark">
